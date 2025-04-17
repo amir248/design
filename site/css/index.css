@@ -134,6 +134,12 @@ header > nav > ul > li > a:hover{
     font-size:33px;
     margin-left:70px;
     border:0;
+    transition: all ease 1s;
+}
+.firstButton:hover{
+    color:var(--yellow-color);
+    background-color: rgb(20, 20, 20);
+
 }
 .secondButton{
     width:300px;
@@ -142,6 +148,11 @@ header > nav > ul > li > a:hover{
     font-size:33px;
     margin-left:70px;
     border:0;
+}
+.secondButton:hover{
+    color:var(--yellow-color);
+    background-color: rgb(20, 20, 20);
+    transition: all ease 1s;
 }
 .menu{
     display:none;
@@ -244,6 +255,11 @@ article{
 .firstBox > div > button{
     border-radius: 17px ;
     border:0;
+    transition: all ease 1s;
+}
+.firstBox > div > button:hover{
+    color:var(--green-colorTwo);
+    background-color: rgba(20,20,20);
 }
 body > main > article > div > div:nth-child(2) > div > img{
     width:290px;
@@ -258,8 +274,12 @@ body > main > article > div > div:nth-child(2) > button{
     background-color: #0eb937;
     color:white;
     text-shadow: 1px 1px black;
+    transition: all ease 1s;
 }
-
+body > main > article > div > div:nth-child(2) > button:hover{
+    color:var(--yellow-colorTwo);
+    background-color: rgb(20, 20, 20);
+}
 
 
 
