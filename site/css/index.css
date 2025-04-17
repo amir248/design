@@ -160,7 +160,7 @@ header > nav > ul > li > a:hover{
     }
     .menu > span{
         width:73px;
-        background-color: var(--green-color);
+        background-color:black;
         height:3px;
     }
     header > nav > ul{
