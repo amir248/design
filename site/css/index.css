@@ -163,6 +163,16 @@ header > nav > ul > li > a:hover{
         background-color: var(--green-color);
         height:3px;
     }
+    header > nav > ul{
+        grid-template-columns: repeat(auto-fill, minmax(70px, 290px));
+
+    }
+}
+@media(max-width:600px){
+    header > nav > ul{
+        grid-template-columns: repeat(auto-fill, minmax(70px, 210px));
+
+    }
 }
 @media(max-width:450px){
     .center{
@@ -172,8 +182,8 @@ header > nav > ul > li > a:hover{
         margin:0;
     }
     header > nav > ul{
-        max-width:200px;
-        grid-template-columns: repeat(auto-fill, minmax(7px, 90px));
+        max-width:400px;
+        grid-template-columns: repeat(auto-fill, minmax(70px, 155px));
     }
 }
 @media(max-width:353px){
@@ -182,6 +192,10 @@ header > nav > ul > li > a:hover{
     }
     .secondButton{
         width:200px;
+    }
+    header > nav > ul{
+        max-width:200px;
+        grid-template-columns: repeat(auto-fill, minmax(7px, 90px));
     }
 }
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!111 */
