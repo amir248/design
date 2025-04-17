@@ -133,6 +133,7 @@ header > nav > ul > li > a:hover{
     border-radius: 37px;
     font-size:33px;
     margin-left:70px;
+    border:0;
 }
 .secondButton{
     width:300px;
@@ -140,6 +141,7 @@ header > nav > ul > li > a:hover{
     background-color: var(--yellow-color);
     font-size:33px;
     margin-left:70px;
+    border:0;
 }
 .menu{
     display:none;
@@ -241,6 +243,7 @@ article{
 }
 .firstBox > div > button{
     border-radius: 17px ;
+    border:0;
 }
 body > main > article > div > div:nth-child(2) > div > img{
     width:290px;
