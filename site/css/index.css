@@ -299,7 +299,21 @@ footer{
     justify-content: center;
     align-items: center;
     justify-items: center;
-    grid-template-columns: repeat(auto-fill,minmax(100px,1fr));
+    grid-template-columns: repeat(auto-fill,minmax(370px,1fr));
+}
+@media(max-width:1130px){
+    footer{
+        grid-template-columns: repeat(auto-fill,minmax(270px,1fr));
+
+    }
+
+}
+@media(max-width:700px){
+    footer{
+        grid-template-columns: repeat(auto-fill,minmax(170px,1fr));
+
+    }
+
 }
 footer > ol,ul > li{
     text-decoration: none;
