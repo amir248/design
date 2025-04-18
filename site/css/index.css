@@ -216,6 +216,12 @@ article{
     width:100%;
     max-width:1300px;
 }
+.textArticle{
+    color:white;
+}
+.textArticle > ul,ol > li{
+    margin-left:37px;
+}
 .firstBox{
     display:flex;
     justify-content: center;
@@ -289,4 +295,13 @@ footer{
     max-width:1300px;
     min-height: 170px;
     background-color: #e3c211;
+    display:grid;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fill,minmax(100px,1fr));
+}
+footer > ol,ul > li{
+    text-decoration: none;
+    list-style-type:none;
 }
