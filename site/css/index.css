@@ -291,6 +291,13 @@ body > main > article > div > div:nth-child(2) > button:hover{
 
 /* FOOTER  */
 footer{
+    background-color: #e3c211;
+    text-align: center;
+}
+footer > strong{
+    font-size: 30px;
+}
+footer > div{
     width:100%;
     max-width:1300px;
     min-height: 170px;
@@ -315,7 +322,7 @@ footer{
     }
 
 }
-footer > ol,ul > li{
+footer > div > ol,ul > li{
     text-decoration: none;
     list-style-type:none;
 }
