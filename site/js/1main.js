@@ -33,9 +33,37 @@ function include(){
         resolve(inc());
     })
 };//include
+function onClickToButton(){
+    return new Promise((resolve)=>{
+        function call(){
+            document.querySelector(".firstButton").addEventListener('click',()=>{
+                window.location.href="tel:+79528885656";
+            });
+            document.querySelector('.secondButton').addEventListener('click',()=>{
+                window.location.href="https://api.whatsapp.com/send?phone=79528885656";
+            });
+        }
+        resolve(call());
+    })
+};
+function year(){
+    return new Promise((resolve)=>{
+        function goYear(){
+            const d = new Date();
+            let year = d.getFullYear();
+            console.log(year);
+            document.querySelector("#data").innerHTML=`${year}`;
+        }
+        setTimeout(()=>{
+            resolve(goYear());
+        },1500)
+    });
+};//year
 async function main(){
     await include();
     await first();
     await menu();
+    await onClickToButton();
+    await year();
 }
 main();
