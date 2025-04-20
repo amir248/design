@@ -5,19 +5,31 @@ function createMenu(){
     document.querySelector('main').prepend(menuoK);
     let linkA=document.querySelectorAll('.openMenu > a');
     setTimeout(()=>{
+        document.querySelector('.openMenu').style.height="100vh";
+        document.querySelector('.openMenu').style.opacity="1";
         for(let i=0;i<linkA.length;i++){
             linkA[i].style.fontSize="30px";
         }
-        // document.querySelector('.openMenu > a').style.fontSize="30px";
-    })
+    },100)
     closeMenu();
 };//createMenu
 function closeMenu(){
     document.querySelector(".openMenu").addEventListener('click',()=>{
-        document.querySelector(".openMenu").remove();
+        document.querySelector(".openMenu").style.cssText=`
+        bottom:0;
+        height:0;
+        opacity:0;
+        `;
+        let linkA=document.querySelectorAll(".openMenu > a");
+        for(let j=0;j<linkA.length;j++){
+            linkA[j].style.fontSize="0";
+        }
+        setTimeout(()=>{
+            document.querySelector(".openMenu").remove();
+        },777);
     })
 };//closeMenu
 document.querySelector('.menu').addEventListener('click',()=>{
     createMenu();
-    console.log('oK menu!!!');
+    // console.log('oK menu!!!');
 });
