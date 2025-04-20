@@ -45,7 +45,7 @@ function onClickToButton(){
         }
         resolve(call());
     })
-};
+};//onClickButton
 function year(){
     return new Promise((resolve)=>{
         function goYear(){
