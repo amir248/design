@@ -1,0 +1,39 @@
+ nav{
+    min-width:100%;
+    width: 100%;
+    min-height:70px;
+    background-color:#e3c211;
+    display:grid;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    /* grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); */
+}
+nav > ul{
+    width:100%;
+    max-width:1300px;
+    display:grid;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fill , minmax(70px, 190px));
+}
+
+nav > ul > li > img{
+    width:70px;
+}
+
+nav > ul > li{
+    display:inline-block;
+    /* width:50%; */
+}
+nav > ul > li > a{
+    text-decoration:none;
+    color:white;
+    margin-right:17px;
+    text-shadow: 1px 1px black;
+    transition: all ease-in 1s;
+}
+nav > ul > li > a:hover{
+    color:#0eb937;
+}
